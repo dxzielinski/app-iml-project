@@ -31,7 +31,7 @@ def explain_prediction(image, target_class):
         return probabilities.detach().numpy()
 
     explanation = explainer.explain_instance(
-        example_image_rgb, predict_fn, top_labels=1, hide_color=0, num_samples=5000
+        example_image_rgb, predict_fn, top_labels=1, hide_color=0, num_samples=1000
     )
     temp, mask = explanation.get_image_and_mask(
         target_class, positive_only=True, num_features=1, hide_rest=False
