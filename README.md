@@ -31,3 +31,5 @@ streamlit run <path/to/app.py>
 ```
 
 ## App's preview
+
+https://github.com/user-attachments/assets/72a94816-52a4-494f-a378-d4b96a70d509
